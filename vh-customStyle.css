@@ -1,0 +1,256 @@
+/****************
+COLORS
+*****************
+Main-blue: #0675CE
+Medium-blue: #51ABE4
+Light-blue: #F2F6F9
+
+Black-non-black: #3B362E
+Dark-grey: #484848
+Medium-grey: #777D80
+Light-grey: #B2BBC2
+
+Green: #51CD17
+Yellow: #E9B518
+Red: #CE3E06 //#DA3131
+
+Gradient-blue-1: #00AFE9
+Gradient-blue-2: #30C8CA
+*****************/
+
+/****************************
+    GENERAL ELEMENTS
+*****************************/
+*, p, h1, h2, h3, h4, input, textarea, label, .radio > label {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #777D80;
+    font-size: 16px;
+}
+
+a{
+    color: #0675CE;
+    font-weight: 400;
+}
+
+h1{
+    color: #0675CE;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+/******************
+SIGN UP / SIGN IN
+*******************/
+.hero-image-col{ 
+    padding: 0; 
+    position: fixed;
+}
+.hero-image-container{
+    text-align: right;
+    padding-top: 112px;
+    padding-right: 82px;
+    height: 100vh;
+    background: url(images/talent-sign-bg.jpg) no-repeat right center;
+    background-size: cover;
+}
+.hero-image-container.employer{
+    background: url(images/employer-sign-bg.jpg) no-repeat center center;
+}
+.hero-image-container > p{
+    color: #F2F6F9;
+    width: 280px;
+    margin: 48px 0 0 auto;
+    opacity: 0.85;
+}
+p.switch-signin-signup{
+    text-align: right;
+    margin-bottom: 65px;
+}
+.switch-signin-signup-mobile{
+    display: none;    
+}
+.signup-form-container{
+    padding-top: 32px;
+    height: 100vh;
+}
+p.tip{
+    margin-top: -6px;
+    margin-bottom: 24px;
+}
+
+a.forgot-password{
+    float: right;
+    font-size: 14px;
+}
+
+/****************************
+    SMALL SCREENS
+*****************************/
+@media(max-width:991px){
+    .hero-image-col{ 
+        position: relative;
+    }
+    .hero-image-container{
+        text-align: left;
+        padding: 24px 16px 16px 16px;
+        height: 130px;
+        background: url(images/talent-sign-mobile-bg.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .hero-image-container.employer{
+        background: url(images/employer-sign-mobile-bg.jpg) no-repeat center;
+    }
+    .hero-image-container > img{
+        width: 150px;
+    }
+    .hero-image-container > p{
+        font-size: 13px;
+        font-weight: 400;
+        text-align: right;
+        color: #F2F6F9;
+        width: 50%;
+        min-width: 220px;
+        margin-top: 8px;
+    }
+    .signup-form-container{
+        padding-top: 0;
+    }
+    p.switch-signin-signup{
+        display: none;
+    }
+    .switch-signin-signup-mobile{
+        margin-top: 32px;
+        padding-bottom: 32px;
+        display: block;
+        text-align: right;
+    }
+}
+
+/****************************
+    FORM
+*****************************/
+.form-group > label{
+    font-size: 14px;
+}
+
+input[type="radio"] + label{
+    margin-right: 24px;
+    font-size: 16px;
+}
+
+input:checked + label{
+    color: #3B362E;
+    font-weight: 400;
+}
+input[type="radio"]:focus + label{
+    color: #51ABE4;
+}
+
+.signup-form-container .radio input[type=radio], 
+.signup-form-container .radio-inline input[type=radio]{
+   opacity: 0;
+}
+
+input[type="radio"] + label span {
+    display:inline-block;
+    width:24px;
+    height:24px;
+    margin: -4px 8px 0px -20px;
+    vertical-align:middle;
+    cursor:pointer;
+    background: url(images/check-off-icon.svg) center center no-repeat;
+}
+input[type="radio"]:checked + label span {
+    background: url(images/check-on-icon.svg) center center no-repeat;
+}
+
+.form-group{
+    margin-top: 16px;
+}
+
+.form-control {
+    height: 48px;
+    font-size: 16px;
+    color: #3B362E;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #51ABE4;
+    border-radius: 6px;
+}
+
+.form-control:focus{
+    background-color: #F2F6F9;
+    border-color: #0675CE;
+    font-weight: 400;
+}
+/****************************
+    ERROR STATES
+*****************************/
+.form-control.error-state{
+    color: #3B362E;
+    background-color: rgba(205,62,6,0.1);
+    border: 1px solid #CE3E06;    
+}
+.field-error-mgs{
+    font-size: 12px;
+    padding-top: 4px;
+    margin-bottom: -12px;
+    text-align: right;
+    color: #DA3131;
+     display: none; 
+}
+
+/****************************
+    BUTTONS
+*****************************/
+.btn-primary {
+    color: #fff;
+    font-weight: 400;
+    background-image: linear-gradient(-190deg, #30C8CA 0%, #00AFE9 100%);
+    border: none;
+    border-radius: 6px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+}
+
+.btn-primary.active, .btn-primary:active{
+    background-image: linear-gradient(-100deg, #30C8CA 0%, #00AFE9 100%);
+}
+
+.btn-default {
+    color: #0675CE;
+    background-color: #fff;
+    border-color: #0675CE;
+    font-size: 90%;
+}
+.btn-default:hover, .btn-default:active, .btn-default:focus {
+    background-color: #F2F6F9;
+    border-color: #51ABE4;
+}
+.btn-default > img{
+    margin: -4px 8px 0 0;
+}
+
+div.divider-line{
+    width: 100%;
+    height: 24px;
+    background: url(images/divider-line.png) center center repeat-x;
+}
+div.divider-line > span{
+    background-color: #fff;
+    padding-right: 16px;
+}
+
+
+/* 
+@media(max-width:767px){}
+@media(min-width:768px){}
+@media(min-width:992px){}
+@media(min-width:1200px){}
+ */
+/******************
+UTILS
+*******************/
+.success_msg{ color: #51CD17; }

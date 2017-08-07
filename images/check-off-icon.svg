@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>check-off-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="12" cy="12" r="12"></circle>
+    </defs>
+    <g id="Sign-in-Sign-up" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="00-signup-01-talent" transform="translate(-853.000000, -212.000000)">
+            <g id="check-off-icon-small" transform="translate(853.000000, 212.000000)">
+                <g id="check-icon-small">
+                    <g id="Oval-2">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <circle stroke="#0675CE" stroke-width="1" cx="12" cy="12" r="11.5"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
